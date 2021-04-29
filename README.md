@@ -2,8 +2,17 @@
 
 This rollup demo has basic stuffs regarding building the client side javascript.
 
+## Install :
+```sh
+npm install
+```
+
 ## Build the application : 
-`npm run build`
+```sh
+npm run build
+```
 
 ## Build and run the dev server : 
-`npm run dev`
+```sh
+npm run dev
+```

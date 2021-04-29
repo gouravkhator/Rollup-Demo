@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run build && npx http-server",
+    "dev": "npm run build && serve dist/",
     "build": "npm run rollup && npm run static",
     "rollup": "npx rollup -c",
     "static": "rsync -rm src/static dist && rsync src/index.html dist"
@@ -12,12 +12,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "rimraf": "^3.0.2",
     "rollup": "^2.34.2",
-    "rollup-plugin-replace": "^2.2.0"
-  },
-  "devDependencies": {
-    "http-server": "^0.12.3"
+    "rollup-plugin-replace": "^2.2.0",
+    "serve": "^11.3.2"
   }
 }
